@@ -36,15 +36,15 @@ header
    hr{
       margin: 5px 10px;
    }
-
+   
    fieldset
    {
     border: none;
-
    }
+
    legend {
     font-size: 1.4em;
-    margin-bottom: 10px;
+    padding-bottom: 25px;
    }
    label {
     display: block;
@@ -75,15 +75,6 @@ header
       width: 50%;
   }
   
-
-  .avatar{
-    display: block;
-    margin: 0 auto 2em;
-  }
-  .rounded{
-      width: 50%;
-      border-radius: 50%;
-  }
   fieldset p{
       text-align: left;
   }
@@ -137,7 +128,8 @@ input[type="zip"]:focus
   ---------------------------------------------------*/
 
   @media (min-width: 768px) {
-       form{ max-width: 768px;
+       form{
+           max-width: 768px;
        }
        header{
            height: 50px;

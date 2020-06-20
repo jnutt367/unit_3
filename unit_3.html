@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,7 +41,7 @@
                 <input type="search" id="city" name="user_city">
                 
                 <label class="label" for="state">State</label>
-                <select id="state" name="user_state" placeholder="Select State" required>
+                <select id="state" name="state" autocomplete="shipping">
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -96,7 +96,7 @@
                 </select>	
 
                 <label class="label" for="zip">Zip Code</label>
-                <input type="zip" id="zip" name="zip">
+                <input type="text" id="zip" name="user_zip">
 
                 <hr class=bottom-hr>
              </fieldset>
@@ -126,12 +126,12 @@
                 <input type="radio" id="text" value="interest_text" name="user_interest">
                 <label for="text">Plain Text</label><br>
                 
-                <label for="textarea" class="topics">Other topics you'd like to read about</P>
+                <label for="textarea" class="topics">Other topics you'd like to read about</label>
                 <textarea id="textarea" name="user_topics"></textarea>
 
             </fieldset> 
                 <button class="btn" type="submit">Sign Up</button>
         </form>
-        <footer>&copy The Code Review</footer>
+        <footer>Copyright The Code Review</footer>
     </body>
     </html>
