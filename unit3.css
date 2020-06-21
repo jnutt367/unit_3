@@ -82,11 +82,16 @@ header
   .bottom-fieldset{
       background-color: rgb(208, 213, 218);
   }
+  .newsletter{
+    padding-top: 50px;
+}
   
   fieldset p{
       text-align: left;
   }
-
+  .format{
+      margin-top: 30px;
+  }
 
   input[type="checkbox"], 
   input[type="radio"] 
@@ -117,16 +122,20 @@ header
 /*----------------------------------------------------
             Pseudo-Elements
 ----------------------------------------------------*/
+
+
+
+
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
 input[type="search"]:focus,
-   textarea:focus,
-   select:focus,
+textarea:focus,
+select:focus,
 input[type="zip"]:focus
 
 {
-    transition-delay: 2s;
+    transition: ease 3s;
     border: 1px solid lightcoral;
     background-color: lightsteelblue;
     color: black;
@@ -154,9 +163,7 @@ input[type="zip"]:focus
        legend{
            margin-bottom: 35px;
        }
-       .newsletter{
-        padding-top: 50px;
-    }
+      
 
   input[type="zip"],
   input[type="text"],
