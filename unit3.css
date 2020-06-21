@@ -3,10 +3,10 @@
 }
 form
 {
-    font-family: Playfair Display;
-    max-width: 320px;
+    font-family: Bitter;
+    max-width: 500px;
     margin: auto;
-    background-color: seashell;
+    background-color: rgb(218, 229, 233);
 }
 header
 {
@@ -24,7 +24,9 @@ header
    }
    p
    {
-        padding-bottom: 20px;
+       padding-right: 10px;
+       padding-left: 10px;
+       padding-bottom: 20px;
    }
    .top-hr{
        border-top: 5px solid black;
@@ -71,8 +73,14 @@ header
     margin-bottom: 30px;
     opacity: 0.5;
   }
+  #zip{
+      width: 50%;
+  }
   input[type="zip"] {
       width: 50%;
+  }
+  .bottom-fieldset{
+      background-color: rgb(208, 213, 218);
   }
   
   fieldset p{
@@ -102,7 +110,8 @@ header
   footer
   {
       text-align: center;
-      margin-top: 15px;      
+      margin-top: 15px; 
+      background-color: rgb(208, 213, 218);     
   }
 
 /*----------------------------------------------------
@@ -111,12 +120,16 @@ header
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
+input[type="search"]:focus,
    textarea:focus,
    select:focus,
 input[type="zip"]:focus
 
 {
+    transition-delay: 2s;
     border: 1px solid lightcoral;
+    background-color: lightsteelblue;
+    color: black;
     opacity: 1;
 }
 ::placeholder{
@@ -157,7 +170,7 @@ input[type="zip"]:focus
       float: right;
       clear: both;
      }
-     input[type="zip"]{
+    #zip {
          width:25%;
          margin-right: 390px;
      }
